@@ -29,3 +29,35 @@
 
 # 파일조작
 
+
+
+file write, read 활용해서
+
+
+
+ssafy.txt
+
+1
+
+2
+
+3
+
+
+
+ssafy_reverse.txt
+
+3
+
+2
+
+1
+
+
+
+
+
+
+
+
+
