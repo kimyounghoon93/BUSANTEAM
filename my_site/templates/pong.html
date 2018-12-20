@@ -1,0 +1,11 @@
+<h1>pong!</h1>
+<a href="/ping">ping</a>
+
+<form action="/ping">
+    <input type="text" name="name">
+    <input type="button">
+</form>
+
+<h2>신이 {{ name_in_html}}님을 만들 때,</h2>
+<h3>{{ saa }}</h3>
+<img src="{{ url_for('static', filename=result) }}" alt="">
