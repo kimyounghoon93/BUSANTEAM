@@ -1,0 +1,69 @@
+565347253:AAF_swtlyLvJxyGOiBVMElkMjZ6tjLQFM8Q
+-token
+
+ex)
+https://api.telegram.org/bot<token>/METHOD_NAME
+
+https://api.telegram.org/bot565347253:AAF_swtlyLvJxyGOiBVMElkMjZ6tjLQFM8Q/
+
+id
+574800762
+
+보안
+1.베쉬프로파일창 열기
+code ~/.bash_profile
+2.베쉬프로파일창에서 숨길코드 입력
+export TELEGRAM_BOT_TOKEN='565347253:AAF_swtlyLvJxyGOiBVMElkMjZ6tjLQFM8Q'
+export CHAT_ID='574800762'
+3.새로고침
+exec $SHELL
+4.숨겨졌는지 확인
+printenv
+5.안되면 이걸로 넣고 다시 4.번
+source ~/.bash_profile
+6.
+
+c9.io
+https://c9.io/busanteam?welcome
+
+파이썬 버전 옮기며 사용하기
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bashrc
+exec "$SHELL"
+
+파이썬관리 명령어
+pyenv -v
+파이썬 설치 명령어
+pyenv install 3.6.7 - 버전 관계없음
+버전 확인
+pyenv versions
+세팅
+pyenv global 3.6.7
+다시
+pyenv versions
+하면
+--
+  system
+* 3.6.7 (set by /home/ubuntu/.pyenv/version)
+busanteam:~/workspace $ pyenv -V
+pyenv: no such command `-V'
+busanteam:~/workspace $ python -V
+Python 3.6.7
+--
+*안되면 exec $SHELL 로 세로고침
+
+ls
+
+파일 주소 이동
+cd telegram-bot
+플라스크 설치
+pip install Flask
+파일명 바꿨으니
+FLASK_APP=app.py flask run
+로 실행
+외부에서도 접속가능하게 수정
+\
+FLASK_APP=app.py flask run --host=$IP --port=$PORT
+오른쪽 상단 쉐어 버튼에 어플리케이션 주소 뜸
