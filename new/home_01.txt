@@ -18,3 +18,40 @@ print(f'\"안녕, {name}야\"')
 
 5.
 5)
+
+workshop
+Problem
+1.
+
+2.
+#문제
+student = {'python': 80, 'algorithm': 99, 'django': 89, 'flask': 83}
+val1 = student['python']
+val2 = student['algorithm']
+val3 = student['django']
+val4 = stduent['flask']
+i = (val1+val2+val3+val4)/4
+print(i)
+>>>
+student = {'python': 80, 'algorithm': 99, 'django': 89, 'flask': 83}
+print(sum(student.values())/len(student))
+
+3.
+blood_types = ['A', 'B', 'A', 'O', 'AB', 'AB', 'O', 'A', 'B', 'O', 'B', 'AB']
+
+#반복문 x
+
+print('A형:', blood_types.count('A'))
+print('B형:', blood_types.count('B'))
+print('O형:', blood_types.count('O'))
+print('AB형:', blood_types.count('AB'))
+
+#반복문 o
+result = {}
+for blood_type in blood_types:
+    if blood_type in result:
+        result[blood_type] += 1
+    else:
+        result[blood_type] = 1
+print(result)
+        
